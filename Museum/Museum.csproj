@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2AA150C-C057-4386-AACC-F218E36630C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Museum</RootNamespace>
+    <AssemblyName>Museum</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="artist1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="artist1.Designer.cs">
+      <DependentUpon>artist1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Backup.Designer.cs">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="borrowed1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="borrowed1.Designer.cs">
+      <DependentUpon>borrowed1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="collection1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="collection1.Designer.cs">
+      <DependentUpon>collection1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exhibited.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exhibited.Designer.cs">
+      <DependentUpon>Exhibited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exhibition1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exhibition1.Designer.cs">
+      <DependentUpon>exhibition1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MadeBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MadeBy.Designer.cs">
+      <DependentUpon>MadeBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="object1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="object1.Designer.cs">
+      <DependentUpon>object1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="other1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other1.Designer.cs">
+      <DependentUpon>other1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="painting1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="painting1.Designer.cs">
+      <DependentUpon>painting1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="permanent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="permanent1.Designer.cs">
+      <DependentUpon>permanent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="queries.Designer.cs">
+      <DependentUpon>queries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="statue1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="statue1.Designer.cs">
+      <DependentUpon>statue1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="variable.cs" />
+    <Compile Include="viewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewForm.Designer.cs">
+      <DependentUpon>viewForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="artist1.resx">
+      <DependentUpon>artist1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Backup.resx">
+      <DependentUpon>Backup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="borrowed1.resx">
+      <DependentUpon>borrowed1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="collection1.resx">
+      <DependentUpon>collection1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exhibited.resx">
+      <DependentUpon>Exhibited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exhibition1.resx">
+      <DependentUpon>exhibition1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MadeBy.resx">
+      <DependentUpon>MadeBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="object1.resx">
+      <DependentUpon>object1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other1.resx">
+      <DependentUpon>other1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="painting1.resx">
+      <DependentUpon>painting1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="permanent1.resx">
+      <DependentUpon>permanent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="queries.resx">
+      <DependentUpon>queries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statue1.resx">
+      <DependentUpon>statue1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewForm.resx">
+      <DependentUpon>viewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juliet-furst-vjniDz-rmpY-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1554907984-15263bfd63bd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2339295.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6f0478ff8560137371a1ea91938cb4c4c0e2eef5_2_690x408.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\465-4656301_momo-png-download-transparent-background-abstract-png-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uuuuuuuuuuuuu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france-paris-louvre-museum-gold.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
